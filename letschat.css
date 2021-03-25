@@ -1,0 +1,26 @@
+
+body
+{
+    background-color: crimson;
+}
+
+.header
+{
+    color: white;
+    font-family: 'Yeon Sung';
+    font-size: 45px;
+    letter-spacing: 10px;
+}
+
+.login_div
+{
+	background: rgba(255,255,255,0.8);
+    float: none;
+    border-radius: 15px;
+}
+
+h2
+{
+    color: crimson;
+    font-family: fantasy;
+}
