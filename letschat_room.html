@@ -1,7 +1,6 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>LetsChat</title>
+        <title>LetsChatRoom</title>
         <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
@@ -12,25 +11,22 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="letschat.css">
+        <link rel="stylesheet" type="text/css" href="letschat_room.css">
         
-        <script src="letschat.js"></script>
+        <script src="letschat_room.js"></script>
     </head>
     <body>
         <div class="contaner">
+            <button id="logout" onclick="logout()" class="btn btn-primary">Log out</button>
             <center>
                 <h1 class="header">Lets Chat</h1>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
-                    <img src="logo.png" class="Logo">
-                    <h2>LOG IN</h2>
-                    <div class="form-group">
-                        <label >User Name:</label>
-                        <input type="text" id="user_name" class="form_control" placeholder="User Name">
-                    </div>
-                    <button id="login_button" class="btn btn-success" onclick="addUser()">Log in</button>
-                    <br><br>
+
+                <div class="form-group input_div_room_page">
+                    <label style="color: white;">Add Room:</label>
+                    <input type="text" id="room_name" class="form_control" placeholder="#Room Name">
                 </div>
-            </center>
+                <button onclick="addRoom()" class="btn btn-success">Add Room</button>
+            </center>         
         </div>
     </body>
 </html>
