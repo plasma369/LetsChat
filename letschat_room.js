@@ -6,7 +6,7 @@ var firebaseConfig = {
     storageBucket: "chat-website-64ec5.appspot.com",
     messagingSenderId: "528563953774",
     appId: "1:528563953774:web:d0ed6bd8b8d4a3ac79c67f"
-};
+  };
 firebase.initializeApp(firebaseConfig);
 
 function addRoom()
