@@ -16,7 +16,7 @@ function addRoom()
     perpose : "adding room name"
     });
     localStorage.setItem("room_name", room_name);
-    window.location = "LetsChat.html";
+    window.location = "l.html";
 }
 
 function logout()
@@ -43,14 +43,14 @@ function getData()
             perpose : "adding room name"
             });
             localStorage.setItem("room_name", room_name);
-            window.location = "kwitter_page.html";
+            window.location = "letschat_page.html";
 
             function redirectToRoomName(name)
             {
                   console.log(name);
                   localStorage.setItem("room_name", room_name);
-                  window.location = "kwitter_page.html";
+                  window.location = "letschat_page.html";
             }
 }
 });});}
-getData(); 
+getData();
